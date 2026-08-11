@@ -133,6 +133,8 @@ public class Body : MonoBehaviour
 
     void Update()
     {
+
+        Debug.Log(pose_data == null ? "NULL" : pose_data.Length.ToString());
         float rotationSpeed = 3.0f;
         float t = rotationSpeed * Time.deltaTime;
 
